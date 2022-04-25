@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nave{
+    background-color: white;
+}
+.nave img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    width: 10%;
+}
+.nave a{
+    text-decoration: none;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Patrick Hand', cursive;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 20px;
+    color: white;
+    background-color: red;
+    margin: 15px 30px 30px 30px;
+    float: right;
+}
+.nave a:hover{
+    background-color: rgb(199, 0, 0);
+}
+body{
+    background-image: url(img/bg2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.buscar .titulo{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.buscar h3{
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+.buscar input[type="search"]{
+    background-color: white;
+    border-radius: 40px;
+    border: none;
+    width: 70%;
+    font-size: 20px;
+    padding: 25px;
+}
+.buscar input[type="search"]:hover{
+    border: none;
+}
+.buscar input[type="submit"]{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px 50px 15px 50px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+    margin-left: 20px;
+    border-radius: 50px;
+}
+.buscar input[type="submit"]:hover{
+    background-color: rgb(205, 0, 0);
+}
+.buscar{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 18%;
+}
+@media only screen and (max-width: 1040px){
+    .nave img{
+        width: 20%;
+    }
+}
+@media only screen and (max-width: 900px){
+    .nave img{
+        width: 10%;
+    }
+    .nave a{
+        padding: 10px 15px 10px 15px;
+        font-size: 20px;
+        margin-top: 10px;
+        margin: 10px;
+    }
+}
+@media only screen and (max-width: 550px){
+    body{
+        background: rgb(230, 230, 230);
+    }
+    .nave img{
+        width: 30%;
+    }
+    .nave a{
+        padding: 10px 15px 10px 15px;
+        font-size: 20px;
+        margin-top: 10px;
+        margin: 10px;
+    }
+    .buscar .titulo{
+        font-size: 20px;
+    }
+    .buscar h3{
+        font-size: 20px;
+    }
+    .buscar input[type="search"]{
+        width: 85%;
+        font-size: 10px;
+        margin: 5px;
+    }
+    .buscar input[type="submit"]{
+        font-size: 15px;
+    }
+}
